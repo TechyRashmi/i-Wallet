@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+   >
+
+    <FrameLayout
+
+       android:layout_margin="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/myviewpager"
+            android:elevation="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:overScrollMode="never" />
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabDots"
+            android:layout_marginBottom="@dimen/_minus13sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="bottom"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="1dp"/>
+    </FrameLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/grey_900"
+                android:text="Recharge &amp; Pay Bills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <RelativeLayout
+                        android:id="@+id/rrRecharge"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivPhone"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_mobile"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_40sdp"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp"
+                            android:text="Recharge"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_below="@+id/ivPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rrDTH"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/ivDTh"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_icon_03"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_40sdp"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="DTH "
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_below="@+id/ivDTh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rrElectricity"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/ivElecticity"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_icon_04"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_40sdp"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="Elecrtriciy "
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_below="@+id/ivElecticity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ivFasttag"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_toll" />
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="FastTag"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_below="@+id/ivFasttag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ivAirticket"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_travelling"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_40sdp"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp"
+                            android:text="Air Booking"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_below="@+id/ivAirticket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/Hotel"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_building"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_40sdp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Hotel"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:text="Book Hotel "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/bus"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_icon_05"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_40sdp"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="Book Bus"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_below="@+id/bus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/train"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_icon_06"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_40sdp"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="Book Train"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_below="@+id/train"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_cashback"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_30sdp"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:textColor="@color/grey_900"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Cashback &amp; Offers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/grey_500"
+
+                    android:textSize="@dimen/_11sdp"
+                    android:text="View your cashback &amp; offers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/grey_300"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"/>
+        <LinearLayout
+
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_referral"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_30sdp"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:textColor="@color/grey_900"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Refer &amp; Earn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/grey_500"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="Earn cashback every time a friend makes their 1st payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/grey_300"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"/>
+
+        <LinearLayout
+
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_headphones"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_30sdp"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:textColor="@color/grey_900"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="24 x 7 Customer Support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/grey_500"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="Get quick help everytime you face any problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/grey_300"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"/>
+    </LinearLayout>
+</LinearLayout>
